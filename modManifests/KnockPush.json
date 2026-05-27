@@ -1,7 +1,7 @@
 {
   "id": "KnockPush",
   "displayName": "RAH-72 Pushout",
-  "description": "Adds a rear pusher propeller to the Aryx RAH-72 and rebuilds its coaxial main-rotor motion blur as a live fan of the real blade.",
+  "description": "Aryx RAH-72 compound coaxial helicopter — pusher-prop thrust, coaxial rotor blur, and a tuned flight model.",
   "tags": ["mod", "Aircraft"],
   "urls": [
     { "name": "info", "url": "https://github.com/Rendresen/PushOut" }
@@ -12,13 +12,13 @@
   "autoUpdateArtifacts": "True",
   "artifacts": [
     {
-      "fileName": "KnockPush-1.7.12.zip",
-      "version": "1.7.12",
+      "fileName": "KnockPush-1.7.59.zip",
+      "version": "1.7.59",
       "category": "release",
       "type": "plugin",
-      "gameVersion": "0.33",
-      "downloadUrl": "https://github.com/Rendresen/PushOut/releases/download/v1.7.12/KnockPush-1.7.12.zip",
-      "hash": "sha256:F774C57957896D343BD3DDF015FE08C48C356686E14431664CB8C0463878D185"
+      "gameVersion": "0.33.3",
+      "downloadUrl": "https://github.com/Rendresen/PushOut/releases/download/v1.7.59/KnockPush-1.7.59.zip",
+      "hash": "sha256:1cb21af1577180fcaec008f70bc9ca2e191de79335fed9817c64463e2d5b4a8c"
     }
   ]
 }
