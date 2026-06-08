@@ -34,6 +34,10 @@
         {
           "id": "com.nikkorap.blueprinter",
           "version": "1.8.19"
+        },
+        {
+          "id": "QoL",
+          "version": "1.7.1.0"
         }
       ]
     },
