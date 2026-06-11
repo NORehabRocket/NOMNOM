@@ -17,7 +17,7 @@
   ],
   "githubOwner": "Talon-One-Fighter-Squadron",
   "githubRepoName": "WinWing-vibration-bridge",
-  "autoUpdateArtifacts": "True",
+  "autoUpdateArtifacts": "False",
   "artifacts": [
     {
       "fileName": "NOWinWingBridge.dll",
