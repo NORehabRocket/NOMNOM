@@ -99,7 +99,8 @@ function Validate-Version
         return $result
     }
     Catch 
-    {
+    {   
+        LogError($error[0])
         LogError("$versionString is not of valid Version Format!")
     }
     return $result
@@ -133,11 +134,31 @@ try
     {
         Write-Host "Validating $($parsedMod.id) artifact version $($artifact.version)"
         $artifact
-        Write-Host "Validating fileName: $(Validate-FileName -fileName $artifact.fileName)"
-        Write-Host "Validating artifactUrl: $(Validate-ArtifactURL -URL $artifact.downloadUrl)"
+        $result = Validate-FileName -fileName $artifact.fileName
+        Write-Host "Validating fileName: $($result)"
+        if (!$result)
+        {
+            Exit 1
+        }
+        $result = Validate-ArtifactURL -URL $artifact.downloadUrl
+        Write-Host "Validating artifactUrl: $($result)"
+        if (!$result)
+        {
+            Exit 1
+        }
         #Write-Host "Validating fileHash: $(Validate-FileHashFormat -hashString $artifact.hash)"
-        Write-Host "Validating version: $(Validate-Version -versionString $artifact.version)"
-        Write-Host "Validating gameVersion: $(Validate-Version -versionString $artifact.gameVersion)"
+        $result = Validate-Version -versionString $artifact.version
+        Write-Host "Validating version: $($result)"
+        if (!$result)
+        {
+            Exit 1
+        }
+        $result = Validate-Version -versionString $artifact.gameVersion
+        Write-Host "Validating gameVersion: $($result)"
+        if (!$result)
+        {
+            Exit 1
+        }        
         if ($artifact.dependencies)
         {
             Write-Host "Validating $($parsedMod.id) artifact version $($artifact.version) DEPENDENCIES:"
