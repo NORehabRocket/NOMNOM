@@ -20,6 +20,15 @@
   "autoUpdateArtifacts": "True",
   "artifacts": [
     {
+      "type": "plugin",
+      "fileName": "com.equalizer.unified_v2.3.0.zip",
+      "downloadUrl": "https://github.com/SonPamungkas/NOMNOM-com-equalizer-unified/releases/download/v2.3.0/com.equalizer.unified_v2.3.0.zip",
+      "hash": "sha256:2280b7bec301f666ed7eb3d8debeb7526a69c766200a3786624ad02a34b76daa",
+      "gameVersion": "0.33.3",
+      "version": "2.3.0",
+      "category": "Release"
+    },
+    {
       "fileName": "EqualizerMod.dll",
       "version": "2.3",
       "category": "release",
@@ -27,16 +36,7 @@
       "gameVersion": "0.33.3",
       "downloadUrl": "https://github.com/SonPamungkas/equalizer-mod/releases/download/2.3/EqualizerMod.dll",
       "hash": "sha256:03858353393143de47bf3043910129e803458de6c80fac29b1b3c8f7a868f5ef"
-    },
-    {
-      "type": "plugin",
-      "fileName": "com.equalizer.unified_v2.2.0.zip",
-      "downloadUrl": "https://github.com/SonPamungkas/NOMNOM-com-equalizer-unified/releases/download/v2.2.0/com.equalizer.unified_v2.2.0.zip",
-      "hash": "sha256:67cb69291d98827a598a420e1b4efae3ab501fca3c7ff2230216729689cb26e9",
-      "gameVersion": "0.33.3",
-      "version": "2.2.0",
-      "category": "Release"
     }
   ],
-  "downloadCount": 1838
+  "downloadCount": 1851
 }
