@@ -57,8 +57,9 @@ function Validate-FileName
 function Validate-Id
 {
     Param($id)
+    $idMatchesFilename = ((get-item $Path).Name -replace ".json","") -eq $id
     $check = $ModManifestHashTable["$id"]
-    if (!$check){
+    if (!$idMatchesFilename -or !$check){
         return $false
     }
     return $true
